@@ -1,4 +1,4 @@
-<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="400" alt="Statamic Logo" /></p>
+<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="300" alt="Statamic Logo" /></p>
 
 ## About Statamic
 
@@ -8,16 +8,17 @@ Statamic is an open source, PHP CMS designed and built for developers _and_ thei
 - An intuitive and beautiful control panel
 - Can be used as a full or headless CMS, in JAMStack, or go static with the static site generator
 - Antlers, a flexible template language that takes all the hard work out of building dynamic templates
-- 40+ fieldtypes – more than any other CMS
+- 40+ fieldtypes – more than any other CMS we've ever come across
 - REST API & GraphQL
 - Live Preview
 - Drag & Drop Nav Builder
 - Form Builder
 - Real-time Collaboration
-- Asset Manager
+- Asset Manager, including focal point management
 - Automated Git Integration
 - Multi-site capable
 - Translated into 15+ languages
+- And [much much more](https://statamic.com/features)
 
 The Statamic ecosystem proudly features:
 
