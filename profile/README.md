@@ -41,3 +41,7 @@ Statamic has extensive and friendly [documentation](https://statamic.dev) and a 
 - [Discord](https://statamic.com/discord) — Hang out with the community.
 - [Github Discussions](https://github.com/statamic/cms/discussions) — Help and be helped.
 - [Antlers Toolbox](https://antlers.dev) — A powerful VSCode extension to help you on your way.
+
+You can help with our open source efforts in many ways: by resolving [open issues](https://github.com/statamic/cms/issues), [improving the docs](https://github.com/statamic/docs), blogging what you've learned, or tweeting something helful. 
+
+You can also sponsor our open source work via [GitHub Sponsors](https://github.com/sponsors/statamic) or [buy a T-shirt](https://shop.statamic.com) from us.
