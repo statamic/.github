@@ -1,6 +1,6 @@
 ## About Statamic
 
-Statamic is an open source, PHP CMS designed and built for developers _and_ their clients or content managers. It runs on [Laravel](https://laravel.com) and replaces the pain of managing sites with childlike sense of wonder and joy. And features like:
+**Statamic is an open source, PHP CMS designed and built specifically for developers _and_ their clients or content managers.** It runs on [Laravel](https://laravel.com) and replaces the pain of managing sites with a childlike sense of wonder and joy. And features like:
 
 - The ability to run flat files, Eloquent, a database, or custom data drivers
 - An intuitive and beautiful control panel
