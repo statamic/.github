@@ -11,7 +11,7 @@
 - Asset Manager, including focal point management
 - Translated into 15+ languages
 
-And the Pro version includes even more:
+And the [Pro version](https://statamic.com/pricing) includes even more:
 - REST API & GraphQL
 - Drag & Drop Nav Builder
 - Form Builder
@@ -20,7 +20,7 @@ And the Pro version includes even more:
 - Multi-site capable
 - And [much, much more](https://statamic.com/features)
 
-The Statamic ecosystem proudly features:
+**The Statamic ecosystem proudly features:**
 
 - A kind-hearted and welcoming [community](https://statamic.com/discord)
 - A third-party [marketplace](https://statamic.com/marketplace) with hundreds of free and commercial addons and Starter Kits
