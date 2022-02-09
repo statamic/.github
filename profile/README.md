@@ -1,5 +1,3 @@
-<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="300" alt="Statamic Logo" /></p>
-
 ## About Statamic
 
 Statamic is an open source, PHP CMS designed and built for developers _and_ their clients or content managers. It runs on [Laravel](https://laravel.com) and replaces the pain of managing sites with childlike sense of wonder and joy. And features like:
