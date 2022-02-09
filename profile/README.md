@@ -9,16 +9,18 @@ Statamic is an open source, PHP CMS designed and built for developers _and_ thei
 - Can be used as a full or headless CMS, in JAMStack, or go static with the static site generator
 - Antlers, a flexible template language that takes all the hard work out of building dynamic templates
 - 40+ fieldtypes – more than any other CMS we've ever come across
-- REST API & GraphQL
 - Live Preview
+- Asset Manager, including focal point management
+- Translated into 15+ languages
+
+And the Pro version includes even more:
+- REST API & GraphQL
 - Drag & Drop Nav Builder
 - Form Builder
-- Real-time Collaboration
-- Asset Manager, including focal point management
+- User permissions, roles, and real-time Collaboration
 - Automated Git Integration
 - Multi-site capable
-- Translated into 15+ languages
-- And [much much more](https://statamic.com/features)
+- And [much, much more](https://statamic.com/features)
 
 The Statamic ecosystem proudly features:
 
@@ -37,5 +39,5 @@ Statamic has extensive and friendly [documentation](https://statamic.dev) and a 
 - [Full Documentation](https://statamic.dev) — Read the acclaimed docs.
 - [Twitter](https://twitter.com/statamic) — Read our tweets.
 - [Discord](https://statamic.com/discord) — Hang out with the community.
-- [Github Discussions](https://github.com/statamic/cms/discussions) — Help and be helped
-- [Antlers Toolbox](https://antlers.dev) — A powerful VSCode extension to help you on your way
+- [Github Discussions](https://github.com/statamic/cms/discussions) — Help and be helped.
+- [Antlers Toolbox](https://antlers.dev) — A powerful VSCode extension to help you on your way.
