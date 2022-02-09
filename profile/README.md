@@ -4,9 +4,9 @@ Statamic is an open source, PHP CMS designed and built for developers _and_ thei
 
 - The ability to run flat files, Eloquent, a database, or custom data drivers
 - An intuitive and beautiful control panel
-- Can be used as a full or headless CMS, in JAMStack, or go static with the static site generator
+- Can be used as a full or headless CMS, in JAMStack projects, or as a static site generator
 - Antlers, a flexible template language that takes all the hard work out of building dynamic templates
-- 40+ fieldtypes – more than any other CMS we've ever come across
+- 40+ fieldtypes – more than any other CMS in the known universe
 - Live Preview
 - Asset Manager, including focal point management
 - Translated into 15+ languages
