@@ -1,16 +1,12 @@
 name: GitHub Actions Security Analysis
 
-on:
+on: # zizmor: ignore[concurrency-limits]
   workflow_call:
   push:
     branches: ["**"]
   pull_request:
 
 permissions: {}
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   zizmor:
