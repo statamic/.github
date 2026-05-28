@@ -6,7 +6,7 @@ on:
 permissions: {}
 
 jobs:
-  stale:
+  stale: # zizmor: ignore[anonymous-definition]
     runs-on: ubuntu-latest
     permissions:
       issues: write

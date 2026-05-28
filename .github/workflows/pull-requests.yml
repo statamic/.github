@@ -9,7 +9,7 @@ on:
 permissions: {}
 
 jobs:
-  uneditable:
+  uneditable: # zizmor: ignore[anonymous-definition]
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
