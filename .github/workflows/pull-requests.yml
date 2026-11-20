@@ -24,6 +24,7 @@ jobs:
                 repository(owner: "statamic", name: "${repo}") {
                   pullRequest(number: $number) {
                     headRepositoryOwner {
+                      __typename
                       login
                     }
                     maintainerCanModify
@@ -52,14 +53,22 @@ jobs:
                  return;
               }
 
-              if (!pullRequest.maintainerCanModify) {
-                console.log('PR not owned by statamic and does not have maintainer edits enabled');
+              const isOrganizationFork = pullRequest.headRepositoryOwner.__typename === 'Organization';
+
+              if (isOrganizationFork || !pullRequest.maintainerCanModify) {
+                const body = isOrganizationFork
+                  ? "Thanks for submitting a PR!\n\nIn order to review and merge PRs most efficiently, we require that all PRs grant maintainer edit access before we review them. GitHub doesn't allow maintainer edits on PRs from forks owned by organizations, even when \"Allow edits by maintainers\" is checked. Please resubmit this PR from a fork on your personal GitHub account with maintainer edits enabled. For more information, [see the relevant GitHub documentation](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork)."
+                  : "Thanks for submitting a PR!\n\nIn order to review and merge PRs most efficiently, we require that all PRs grant maintainer edit access before we review them. For information on how to do this, [see the relevant GitHub documentation](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork). Additionally, GitHub doesn't allow maintainer permissions from organization accounts. Please resubmit this PR from a personal GitHub account with maintainer permissions enabled.";
+
+                console.log(isOrganizationFork
+                  ? 'PR is from a fork owned by an organization, which does not allow maintainer edits'
+                  : 'PR not owned by statamic and does not have maintainer edits enabled');
 
                 await github.rest.issues.createComment({
                   issue_number: pullNumber,
                   owner: 'statamic',
                   repo,
-                  body: "Thanks for submitting a PR!\n\nIn order to review and merge PRs most efficiently, we require that all PRs grant maintainer edit access before we review them. For information on how to do this, [see the relevant GitHub documentation](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork). Additionally, GitHub doesn't allow maintainer permissions from organization accounts. Please resubmit this PR from a personal GitHub account with maintainer permissions enabled."
+                  body,
                 });
 
                 await github.rest.pulls.update({
